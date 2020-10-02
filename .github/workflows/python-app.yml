@@ -33,7 +33,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Python Runner
       run: |
-        python *.py
+        python .\stegnography.py .\download.jpg 1
     - uses: sarisia/actions-status-discord@v1
       if: always()
       with:
